@@ -26,10 +26,11 @@ public class GUIveterinaria extends JFrame {
 	private JPanel contentPane;
 	private JTextField textNombreA;
 	private JTextField textEdad;
-	private JTextField textField;
-	private JTextField textField_1;
-	private JTextField textField_2;
-	private JTextField textField_3;
+	private JTextField textNombre;
+	private JTextField textApellido;
+	private JTextField textCorreo;
+	private JTextField textTelefono;
+	private JTextField textNombreVet;
 
 	/**
 	 * Launch the application.
@@ -114,25 +115,25 @@ public class GUIveterinaria extends JFrame {
 		lblNewLabel_1_1_1.setBounds(10, 178, 44, 12);
 		contentPane.add(lblNewLabel_1_1_1);
 		
-		textField = new JTextField();
-		textField.setColumns(10);
-		textField.setBounds(244, 75, 96, 18);
-		contentPane.add(textField);
+		textNombre = new JTextField();
+		textNombre.setColumns(10);
+		textNombre.setBounds(244, 75, 96, 18);
+		contentPane.add(textNombre);
 		
-		textField_1 = new JTextField();
-		textField_1.setColumns(10);
-		textField_1.setBounds(244, 108, 96, 18);
-		contentPane.add(textField_1);
+		textApellido = new JTextField();
+		textApellido.setColumns(10);
+		textApellido.setBounds(244, 108, 96, 18);
+		contentPane.add(textApellido);
 		
-		textField_2 = new JTextField();
-		textField_2.setColumns(10);
-		textField_2.setBounds(244, 137, 96, 18);
-		contentPane.add(textField_2);
+		textCorreo = new JTextField();
+		textCorreo.setColumns(10);
+		textCorreo.setBounds(244, 137, 96, 18);
+		contentPane.add(textCorreo);
 		
-		textField_3 = new JTextField();
-		textField_3.setColumns(10);
-		textField_3.setBounds(244, 172, 96, 18);
-		contentPane.add(textField_3);
+		textTelefono = new JTextField();
+		textTelefono.setColumns(10);
+		textTelefono.setBounds(244, 172, 96, 18);
+		contentPane.add(textTelefono);
 		
 		JLabel lblNewLabel_1 = new JLabel("Nombre");
 		lblNewLabel_1.setBounds(190, 78, 44, 12);
@@ -171,6 +172,29 @@ public class GUIveterinaria extends JFrame {
 		spinner.setModel(modeloFecha);
 		JSpinner.DateEditor editor = new JSpinner.DateEditor(spinner, "dd/MM/yyyy");
         spinner.setEditor(editor);
+        
+        JLabel lblNewLabel_3 = new JLabel("Fecha");
+        lblNewLabel_3.setBounds(48, 243, 44, 12);
+        contentPane.add(lblNewLabel_3);
+        
+        JLabel lblNewLabel_2_2 = new JLabel("Datos de Cita");
+        lblNewLabel_2_2.setFont(new Font("Tahoma", Font.PLAIN, 17));
+        lblNewLabel_2_2.setBounds(92, 207, 109, 21);
+        contentPane.add(lblNewLabel_2_2);
+        
+        JLabel lblNewLabel_2_2_1 = new JLabel("Observaciones");
+        lblNewLabel_2_2_1.setFont(new Font("Tahoma", Font.PLAIN, 17));
+        lblNewLabel_2_2_1.setBounds(455, 44, 109, 21);
+        contentPane.add(lblNewLabel_2_2_1);
+        
+        JLabel lblNewLabel_3_1 = new JLabel("Nombre Del Veterinario");
+        lblNewLabel_3_1.setBounds(10, 270, 82, 12);
+        contentPane.add(lblNewLabel_3_1);
+        
+        textNombreVet = new JTextField();
+        textNombreVet.setColumns(10);
+        textNombreVet.setBounds(118, 267, 96, 18);
+        contentPane.add(textNombreVet);
 		
 
 	}
